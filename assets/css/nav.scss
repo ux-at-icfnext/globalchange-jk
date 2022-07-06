@@ -1,0 +1,178 @@
+.nav-items{
+    display: flex;
+    z-index: 5;
+    position: fixed;
+    top: 20;
+    right: 0;
+    &.mobile{
+        margin-top: 13px;
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 113;
+        background: $header-footer-background-color;
+        max-height: 500px;
+        width: 80%;
+        overflow-y: scroll;
+    }
+} 
+.nav-item{
+    margin: 10px; 
+    padding: 20px 0 20px 10px;
+}
+
+//current page in the nav is highlighted in gray
+.current{
+    color: $gray-50;
+    text-decoration: underline;
+    &:hover{
+        color:$gray-50;
+    }
+}
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 30;
+    right: 10;   
+    visibility: hidden;
+    &:hover{
+        cursor: pointer;
+    }
+    &.hidden{
+        display: none;
+    }
+}
+//mobile items not displayed in desktop
+.expand-mobile-nav{
+    display: none;
+}
+.collapse-mobile-nav{
+    display: none;
+}
+.nav-second-level-container{
+    display: none;
+}
+.mobile-menu-text{
+    display: none;
+}
+.exit-menu-text{
+    display: none;
+}
+.display{
+    display: block;
+}
+.exit-button{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 30;
+    right: 8;  
+    visibility: hidden;
+    &:hover{
+        cursor:pointer;
+    }
+    &.display{
+        visibility: visible;
+        
+    }
+}
+//when mobile menu is opened, slide left
+@keyframes slide-left{
+    from {
+        transform: translateX(100%);
+      }
+    to {
+        transform: translateX(0%);
+    }    
+}
+
+ //prevent scroll when mobile menu is open
+ body.scroll{
+    overflow: hidden;
+}
+//mobile
+@media (max-width: $grid-md-max){ //USWDS tablet large breakpoint (880px)
+    .nav-items{
+        display: none;
+    }
+    .nav-item{
+        padding: 0px;
+    }
+   
+    .menu-icon{
+        visibility: visible;  
+    }
+    .expand-mobile-nav{
+        display: inline;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20;
+    }
+    
+    .display-collapse-nav{
+        display: inline;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20;
+    }
+    .hidden{
+        display: none;
+    }
+    .nav-second-level-page{
+        display: block;
+        border-top: 1px solid $gray-80;
+        padding: 20px 0 20px 40px;
+        &:hover{
+            cursor: pointer;
+            background-color: $gray-80;
+        }
+    }
+    .mobile-menu-text{
+        display: block;
+        text-align: right;
+        z-index: 1;
+        position: fixed;
+        right:10;
+        top: 50;    
+        &.hidden{
+            display: none;
+        } 
+        &:hover{
+            cursor: pointer;
+        }
+    } 
+    .exit-menu-text{
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }    
+    } 
+    .display-menu-text{
+        display: block;
+        text-align: right;
+        z-index: 1;
+        position: fixed;
+        right:10;
+        top: 50;     
+    } 
+    .nav-top-level-page{
+        text-align: left;
+        width: 100%;
+        padding: 20px 0 20px 10px;
+        border-top: 1px solid $gray-80;
+        &:hover{
+            background-color: $gray-80;
+            cursor: pointer;
+        }
+        &:last-child{
+            border-bottom: 1px solid $gray-80;
+        }
+    }
+    .slide-left{
+        animation: slide-left 500ms;  
+    } 
+    
+}

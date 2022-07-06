@@ -1,0 +1,16 @@
+---
+layout: left-rail
+---
+<div class="card-container">
+    {% for item in site.pages %}
+        {% if page.categories[1] == item.categories[1] %}
+            {% if item.level == "third" %}
+                <div class="card">
+                    <h4>{{item.title}}</h4>
+                    <p>{{item.description}}</p>
+                    <p class="read-more"><a href="{{item.url}}">Read More</a></p>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

@@ -1,0 +1,19 @@
+---
+layout: left-rail
+categories: [about]
+title: About Page
+permalink: /about/
+---
+<h2>Roadmap</h2>
+<h3>Latest releases</h3> 
+<div class="card-container">
+    {% assign releases = site.posts  %}
+    {% for post in releases %}
+        <div class="card">
+            <h4>{{post.title}}</h4>
+            <p>{{post.excerpt}}</p>
+            <p><a href="{{post.url}}">Read More</a></p>
+        </div>
+    {% endfor %}
+</div>
+<!-- | date | reverse -->

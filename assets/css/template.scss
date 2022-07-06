@@ -1,0 +1,58 @@
+.design-files{
+    display: flex; 
+}
+
+.noscroll{
+    overflow: hidden;  
+}
+
+.template-img{
+    width: 25%;
+    padding: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.expanded-img-container{
+    display: none;
+    &.overlay{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: $overlay-background-color;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        overflow-y: scroll;
+        .expanded-img{
+            display: block;
+            position: absolute;
+            top: 80;
+            width: 100%;
+            height: auto;
+        }  
+        .collapse-expanded-img{
+            position: absolute;
+            top: 40;
+            right: 10;
+            width: 40px;
+            height: 40px;
+            z-index: 3;
+            &:hover{
+                cursor: pointer;
+            }
+        }  
+    }
+}
+//mobile
+@media (max-width: $grid-md-max){ //USWDS tablet large breakpoint (880px)
+    .design-files{
+        flex-direction: column;
+    }
+    .template-img{
+        width: 80%;
+        margin: 0 auto;
+    }
+}

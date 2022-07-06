@@ -1,0 +1,18 @@
+<div class="left-rail">
+    <h3 class="left-rail-title"><a href="/{{page.categories[0]}}/">{{page.categories[0]}}</a></h3>
+    {% for item in site.pages %}
+        {% if page.categories[0] == item.categories[0] %}
+            {% if item.type == "sub-nav-item"  %}
+                {% if item.url == page.url %}
+                <a href="{{item.url}}"> <div class="current left-nav-item">
+                        {{item.title}}
+                    </div></a>
+                {% else %}
+                <a href="{{item.url}}"><div  class="left-nav-item">
+                       {{item.title}}
+                    </div></a>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

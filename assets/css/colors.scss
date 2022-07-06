@@ -1,0 +1,26 @@
+$papercolor: {{ site.data.colors.paper }};
+$inkcolor: {{ site.data.colors.ink }};
+$inversecolor: {{ site.data.colors.inverse }};
+$primarycolor: {{ site.data.colors.primary }};
+$secondarycolor: {{ site.data.colors.secondary }};
+$accentcolor: {{ site.data.colors.accent }};
+$linkcolor: {{ site.data.colors.link }};
+$grays: {{ site.data.colors.grays }};
+$header-footer-background-color: {{site.data.colors.header-footer-color}}; 
+$overlay-background-color: {{site.data.colors.overlay-background-color}};
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+// setting up grayscale
+$gray-90: tint($grays, 90);
+$gray-80: tint($grays, 80);
+$gray-70: tint($grays, 70);
+$gray-60: tint($grays, 60);
+$gray-50: tint($grays, 50);
+$gray-40: tint($grays, 40);
+$gray-30: tint($grays, 30);
+$gray-20: tint($grays, 20);
+$gray-10: tint($grays, 10);
+$gray-5: tint($grays, 5);

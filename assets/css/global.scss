@@ -1,0 +1,58 @@
+/* remove default browser styling, globally applied styling */
+*{
+    box-sizing: border-box;  
+    padding: 0; 
+}
+body{
+    margin: 0;
+}
+
+.content{
+    margin: 20px;
+    margin-top: 160px;  
+}
+.content-flex{
+    display: flex;  
+}
+.text{
+    width: 90%;
+    padding: 20px;
+}
+.full-text{
+    width: 100%;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    .card{
+        margin: 10px;
+        padding: 10px;
+        width:300px;
+        height: auto;
+        border: 5px solid $gray-90;
+        border-radius: 25px;
+        h4, p{
+            text-align: center;
+        }
+    }
+}
+.inactive{
+    opacity: 0.1;
+    a:hover{
+        text-decoration: none;
+        color: $inkcolor;
+        cursor: auto;
+
+    }
+}
+//mobile
+@media (max-width: $grid-md-max){ //USWDS tablet large breakpoint (880px)
+    .card-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .card{
+            width: 100%;
+        }
+    }  
+}
