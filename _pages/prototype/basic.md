@@ -20,6 +20,8 @@ Kevin alcatra pork chop bresaola. Ball tip tongue capicola sausage, t-bone strip
 - Alcatra doner beef 
 - Ribeye pastrami 
 - Pig sausage shank 
+    - Turducken salami
+    - Buffalo brisket
 - Kevin tenderloin
 
 Turducken salami tenderloin corned beef [drumstick sirloin pastrami](), buffalo brisket bresaola bacon chuck sausage cupim. Leberkas ham capicola, jowl pork belly meatball jerky pork chop filet mignon. Andouille ribeye salami leberkas corned beef turkey, tenderloin jerky porchetta buffalo pig. Pancetta brisket short ribs, shoulder prosciutto landjaeger ball tip sirloin meatball shank hamburger capicola.

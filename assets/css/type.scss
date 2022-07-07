@@ -30,9 +30,7 @@ a{
         text-decoration: underline;
     }
 }
-ul{
+ul, ol {
     font-family: $body-font;
-}
-ol{
-    font-family: $body-font;
+    margin-left: 2rem;
 }
