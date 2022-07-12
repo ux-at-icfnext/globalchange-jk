@@ -10,7 +10,6 @@ permalink: /prototype-basic/
 Spicy jalapeno bacon ipsum dolor amet tri-tip venison boudin meatball alcatra. Shank andouille tongue porchetta flank pork spare ribs tenderloin short ribs pastrami sirloin ham ground round. 
 {: .intro}
 
-
 Chicken brisket buffalo ball tip, turducken tri-tip chislic corned beef [shank biltong tenderloin]() meatloaf alcatra shankle porchetta. Ball tip meatloaf picanha boudin, pastrami pork belly strip steak chuck pig capicola leberkas buffalo turducken jerky. Sirloin beef shoulder, venison salami ham hock jerky chicken chislic t-bone.
 
 ## Subtitle
