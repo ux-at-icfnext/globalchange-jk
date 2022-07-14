@@ -3,14 +3,15 @@
 <html>
     {% include partials/head.html %}
     <body>
+        {% if page.type contains "prototype" %}
+            {% include partials/proto/header.html %}
+        {% else %}
         <div class="header-container">
-            {% if page.type contains "prototype" %}
-                {% include partials/proto/header.html %}
-            {% else %}
-                {% include partials/lib/header.html %}
-                {% include partials/lib/nav.html %}
-            {% endif %}
+            {% include partials/lib/header.html %}
+            {% include partials/lib/nav.html %}
         </div>
+        {% endif %}
+
         <div class="content">
             {{content}}
         </div>
