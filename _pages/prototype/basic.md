@@ -2,7 +2,7 @@
 layout: left-rail
 categories: [prototype]
 title: Hi! I'm a basic page
-type: prototype
+type: [prototype, sub-nav-item]
 permalink: /prototype-basic/
 ---
 

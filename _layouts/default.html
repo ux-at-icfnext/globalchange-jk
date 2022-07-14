@@ -4,7 +4,7 @@
     {% include partials/head.html %}
     <body>
         <div class="header-container">
-            {% if page.type=="prototype" %}
+            {% if page.type contains "prototype" %}
                 {% include partials/proto/header.html %}
             {% else %}
                 {% include partials/lib/header.html %}
@@ -14,7 +14,7 @@
         <div class="content">
             {{content}}
         </div>
-        {% if page.type=="prototype" %}
+        {% if page.type contains "prototype" %}
             {% include partials/proto/footer.html %}
         {% else %}
             {% include partials/lib/footer.html %}

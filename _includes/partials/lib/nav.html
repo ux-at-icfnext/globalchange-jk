@@ -14,7 +14,7 @@
                 <ul>
                     {% for page in site.pages %}
                         {% if page.categories contains item.categories %}
-                            {% if page.type == "sub-nav-item" %}
+                            {% if page.type contains "sub-nav-item" %}
                                 <a href="{{page.url}}" class="nav-second-level-page text-style">
                                     {{page.title}}
                                </a>
