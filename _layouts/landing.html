@@ -4,7 +4,7 @@ layout: left-rail
 <div class="card-container">
     {% for item in site.pages %}
         {% if page.categories[1] == item.categories[1] %}
-            {% if item.level == "third" %}
+            {% if item.type contains "detail-page" %}
                 <div class="card">
                     <h4>{{item.title}}</h4>
                     <p>{{item.description}}</p>

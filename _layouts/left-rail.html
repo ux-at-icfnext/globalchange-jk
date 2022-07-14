@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% if page.level == "third" %}
+{% if page.level contains "detail-page" %}
     {% include partials/breadcrumbs.html %}
 {% endif %}
 <div class="content-flex">
