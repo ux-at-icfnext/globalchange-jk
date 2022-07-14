@@ -15,8 +15,7 @@ design-file:
       alt: Design File size md image
     - file: "https://i.picsum.photos/id/1053/3596/2393.jpg?hmac=shru06Q5TiVeHArvSrQdBwclhorTJwYGnprqLqaH0hk"
       alt: Design File size sm image
-details: |
-    view [wireframe](/prototype-basic) 
+details: 
 specs:
     - name: Title
       type: h1
