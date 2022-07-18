@@ -48,7 +48,10 @@ specs:
 ---
 
 TODO: Link to resource patterns:
-- Image
 - Video
 - Attachement
 - Highlight
+
+
+
+{{ content | stringify }}
