@@ -64,6 +64,7 @@ layout: left-rail
             </tr>
         </thead>
         {% for spec in page.schema %}
+        <tbody>    
             <tr>
                 <td>{{ spec.fieldname }} </td>
                 <td>{{ spec.type }}</td>
@@ -73,6 +74,7 @@ layout: left-rail
                 <td>{{ spec.example }}</td>
                 <td>{{ spec.notes }}</td>
             </tr>
+        </tbody>
         {% endfor %}
     </table>
 {% endif %}
