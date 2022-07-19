@@ -26,11 +26,11 @@ h1{
 }
 a{
     font-family: $body-font;
-    color: $inkcolor;
-    text-decoration: none;
+    color: $linkcolor;
+    text-decoration: underline;
     &:hover {
-        color: $linkcolor;
-        text-decoration: underline;
+        color: $inkcolor;
+        text-decoration: none;
     }
 }
 ul, ol {

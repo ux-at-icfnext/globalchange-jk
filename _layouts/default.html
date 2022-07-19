@@ -11,8 +11,11 @@
             {% include partials/lib/nav.html %}
         </div>
         {% endif %}
-
+        {% if page.type contains "prototype" %}
+        <div class="content-container">
+        {% else %}
         <div class="content">
+        {% endif %}
             {{content}}
         </div>
         {% if page.type contains "prototype" %}

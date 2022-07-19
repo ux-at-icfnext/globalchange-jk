@@ -1,6 +1,6 @@
 ---
 layout: template
-categories: [templates, template-page-1]
+categories: [templates, resource]
 level: third
 title: Nested Template Page
 permalink: /templates/template-page-1/nested-template-page/

@@ -1,9 +1,9 @@
 ---
 layout: resources
 categories: [prototype]
-title: Resource Page
+title: Resource Page (Video)
 type: [prototype, sub-nav-item]
-permalink: /prototype-resource/
+permalink: /prototype-resource-video/
 intro-text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 video: https://www.youtube.com/embed/ScMzIvxBSi4
 video-length: 1:32
